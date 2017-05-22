@@ -106,14 +106,6 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     }
 
     /**
-     * @inheritdoc
-     */
-    public static function findIdentityByAccessToken($token, $type = null)
-    {
-        return self::find()->where(['auth_key' => $token])->one();
-    }
-
-    /**
      * @param $email
      * @return array|null|\yii\db\ActiveRecord
      */

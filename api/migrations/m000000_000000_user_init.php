@@ -20,7 +20,6 @@ class m000000_000000_user_init extends Migration
             'password' => Schema::TYPE_STRING,
             'activation_code' => Schema::TYPE_STRING,
             'reset_code' => Schema::TYPE_STRING,
-            'auth_key' => Schema::TYPE_STRING,
             'status_id' => Schema::TYPE_INTEGER,
             'created_at' => $this->integer(),
             'updated_at' => $this->integer()
